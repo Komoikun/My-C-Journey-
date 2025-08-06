@@ -1,0 +1,55 @@
+/* 
+
+I created this project while learning about data types, constants, and basic input/output in C++. In this program, the user can enter the number of cars they want to get cleaned, and the program will calculate the estimated cost of cleaning.
+The output looks something like this:
+   
+
+vedant's car Cleaning Service     
+
+Number of small cars: 3
+Number of large cars: 1
+Price per small car: $25
+Price per large car: $35
+Cost : $110
+Tax: $6.6
+===============================
+Total estimate: $116.6
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    cout<< "vedant car cleaning me aapka swagat hai!" << endl;
+    
+    int small_cars {0};
+    cout<<"\nnumber of small cars you would like to clean: ";
+    cin>>small_cars;
+    int large_cars {0};
+    cout<<"number of large cars you would like to clean: ";
+    cin>>large_cars;
+    cout<< endl;
+    cout<<endl;
+    double price_per_small_car {32.5};
+    double price_per_large_car {56.4};
+    double tax_rate {0.7};
+    int estimate_expiry {30};
+    cout<<"price of cleaning small car: $"<< small_cars * price_per_small_car <<endl;
+    cout<<"price of cleaining large car: $"<< large_cars * price_per_large_car <<endl;
+    cout<< endl;
+    cout<<endl;
+    
+    cout<< "cost: $" <<(small_cars * price_per_small_car)+(large_cars * price_per_large_car) << endl;
+    cout<<"tax: $" << ((small_cars * price_per_small_car)+(large_cars * price_per_large_car))*tax_rate<< endl;
+    cout<<endl;
+    cout<<"=================================================="<< endl;
+    cout <<" your total estimate: $"<< (((small_cars * price_per_small_car)+(large_cars * price_per_large_car))*tax_rate)+(small_cars * price_per_small_car)+(large_cars * price_per_large_car)<<endl;    
+    
+    
+    
+    
+ 
+    cout << endl;
+    return 0;
+}
